@@ -64,11 +64,11 @@ jobs:
 
       - name: Build Sileo Nightly (iphoneos-arm)
         run: |
-          make clean package NIGHTLY=1 DEBUG=0 ALL_BOOTSTRAPS=1
+          make clean package NIGHTLY=1 DEBUG=0 ALL_BOOTSTRAPS=0
 
       - name: Build Sileo Nightly (iphoneos-arm64)
         run: |
-          make clean package NIGHTLY=1 DEBUG=0 ALL_BOOTSTRAPS=1 SILEO_PLATFORM=iphoneos-arm64
+          make clean package NIGHTLY=1 DEBUG=0 ALL_BOOTSTRAPS=0 SILEO_PLATFORM=iphoneos-arm64
 
       - name: Build Sileo Nightly (darwin-amd64)
         run: |
